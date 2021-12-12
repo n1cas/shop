@@ -1,0 +1,13 @@
+<div class="card w-60 m-1">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">
+        {{product.description}}
+        <br>
+        <span>Price:{{product.name}}</span>
+        <br>
+        <span>Available:{{product.isAvailable}}</span>
+      </p>
+      <a href="#" class="btn btn-primary" (click)="onAddToCart(product.name)">Buy</a>
+    </div>
+</div>
