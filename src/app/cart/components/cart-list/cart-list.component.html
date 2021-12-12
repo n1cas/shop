@@ -1,0 +1,10 @@
+<div class="w-60 m-1">
+    <ng-container *ngIf="entries; else empthyMessage;">
+        <div *ngFor="let entre of entries; trackBy: courseTrackByName;">
+            <app-cart-item [cartEtries]="entre"></app-cart-item>
+        </div>
+    </ng-container>
+    <ng-template #empthyMessage>
+        cart is empty......
+    </ng-template>
+</div>
