@@ -1,6 +1,8 @@
 <div class="w-60 m-1">
+  <!-- emptyMessage очепятка? -->
     <ng-container *ngIf="entries; else empthyMessage;">
         <div *ngFor="let entre of entries; trackBy: courseTrackByName;">
+          <!-- cartEntries очепятка? -->
             <app-cart-item [cartEtries]="entre"></app-cart-item>
         </div>
     </ng-container>
